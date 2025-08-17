@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+thead {
+    background-color: #333333;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu{
+    margin: auto;
+}
+
+/* ban đầu ở đây anh đang đi qua 2 cấp cha rồi mới đến thằng box
+
+    thì anh có thể tính số ưu tiên như sau:
+    .menu = 1
+    tbody = 1
+    .box = 1
+    tổng sẽ là 3 tức là độ ưu tiên nó là 3
+*/
+
+.menu tbody .box:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+table {
+    width: 30%;
+}
+
+
+/* 
+    còn đây là ban đầu của anh.
+    nó chỉ có .box thôi nên độ ưu tiên nó sẽ là 1
+    và do ở thằng trên anh dùng background và hover cũng vậy nên nó 
+    sẽ tính độ ưu tiên và so sanh thằng nao số to hơn thì sẽ
+    ghi đè thằng bé hơn.
+
+    để khắc phục thì ở trên anh đi cấp như nào thì ở dưới 
+    anh đi như vậy thì độ ưu tiên sẽ bằng nhau và thằng 
+    nào viết sau nó sẽ ưu tiên hơn.
+    anh đọc qua nhé không hiểu thì ới em
+*/
+.menu tbody .box:hover{
+    background: #FFEBD6;
+    cursor: pointer;
+}

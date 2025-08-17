@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Georgia, "Times New Roman", serif;
+    src: url("../fonts/georgia.ttf");
+}
+
+html {
+    font-size: 60%;
+    font-family: "Georgia", serif;
+}
+
+body {
+    font-size: 1.7rem;
+}
+
+div {
+    width: 50%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2,
+p::first-letter {
+    color: #bf3d26;
+    font-size: 3rem;
+    font-weight: bold;
+}
